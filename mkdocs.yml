@@ -1,0 +1,106 @@
+site_name: Wally Documentation
+theme:
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - rust
+    - cpp
+    - c
+    - python
+    - bash
+    - java
+    - javascript
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.tilde
+  - pymdownx.tasklist
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:pymdownx.emoji.gemoji
+      alt: short
+      options:
+        attributes:
+          height: 20
+          width: 20
+  - pymdownx.keys
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      social_url_shortener: true
+      user: 'wally-lang'
+      repo: 'wally-lang.github.io'
+      repo_url_shorthand: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link:
+        - www.github.com/wally-lang
+    - icon: fontawesome/brands/discord
+      link:
+        - https://discord.gg/8qZ7Y4j
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Hello World: getting-started/hello-world.md
+    - Wally CLI: getting-started/wally-cli.md
+    - Wally Editor: getting-started/wally-editor.md
+  - Language:
+    - Syntax: language/syntax.md
+    - Types: language/types.md
+    - Access Modifiers: language/access-modifiers.md
+    - Variables: language/variables.md
+    - Functions: language/functions.md
+  # - Standard Library:
+  #   - Array: standard-library/array.md
+  #   - Boolean: standard-library/boolean.md
+  #   - Char: standard-library/char.md
+  #   - Dictionary: standard-library/dictionary.md
+  #   - Error: standard-library/error.md
+  #   - Float: standard-library/float.md
+  #   - Integer: standard-library/integer.md
+  #   - Iterator: standard-library/iterator.md
+  #   - List: standard-library/list.md
+  #   - Map: standard-library/map.md
+  #   - Math: standard-library/math.md
+  #   - Option: standard-library/option.md
+  #   - Result: standard-library/result.md
+  #   - Set: standard-library/set.md
+  #   - String: standard-library/string.md
+  #   - Tuple: standard-library/tuple.md
+  #   - Unit: standard-library/unit.md
+  - Contributing:
+    - Contributing: contributing/contributing.md
+    - Code of Conduct: contributing/code-of-conduct.md
+    - License: contributing/license.md 
